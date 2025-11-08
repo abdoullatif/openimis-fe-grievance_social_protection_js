@@ -5,6 +5,7 @@ import React from 'react';
 import { ListAlt, AddCircleOutline } from '@material-ui/icons';
 import { FormattedMessage } from '@openimis/fe-core';
 import messages_en from './translations/en.json';
+import messages_fr from './translations/fr.json';
 import reducer from './reducer';
 import GrievanceMainMenu from './menu/GrievanceMainMenu';
 import TicketsPage from './pages/TicketsPage';
@@ -27,7 +28,10 @@ const ROUTE_TICKET_TICKET = 'ticket/ticket';
 const ROUTE_TICKET_NEW_TICKET = 'ticket/newTicket';
 
 const DEFAULT_CONFIG = {
-  translations: [{ key: 'en', messages: messages_en }],
+  translations: [
+    { key: 'en', messages: messages_en },
+    { key: 'fr', messages: messages_fr }
+  ],
   reducers: [{ key: 'grievanceSocialProtection', reducer }],
 
   refs: [

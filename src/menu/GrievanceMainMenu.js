@@ -4,7 +4,7 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import { connect } from 'react-redux';
-import { ListAlt, AddCircleOutline } from '@material-ui/icons';
+import { ListAlt, AddCircleOutline, Security } from '@material-ui/icons';
 import { formatMessage, MainMenuContribution, withModulesManager } from '@openimis/fe-core';
 import {
   GRIEVANCE_MAIN_MENU_CONTRIBUTION_KEY,
@@ -42,6 +42,7 @@ function GrievanceMainMenu(props) {
     <MainMenuContribution
       {...props}
       header={formatMessage(props.intl, MODULE_NAME, 'mainMenuGrievance')}
+      icon={<Security />}
       entries={entries}
       menuId="GrievanceMainMenu"
     />
